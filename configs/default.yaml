@@ -1,0 +1,58 @@
+# Default configuration for LoRA reproduction experiment
+
+model:
+  name: "HuggingFaceTB/SmolLM2-135M"
+  dtype: "float32"
+  device: "auto"  # auto, cuda, cpu - auto detects ROCm/CUDA/CPU automatically
+
+lora:
+  rank: 16
+  alpha: 16
+  dropout: 0.0
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+training:
+  num_epochs: 10
+  batch_size: 4
+  num_samples: 10000
+  seq_length: 128
+  learning_rate: 1.0e-4
+  weight_decay: 0.0
+  loss_type: "mse"  # mse, kl, cosine
+  validation_split: 0.1
+
+benchmark:
+  test_prompts:
+    - "Hello, my name is"
+    - "The capital of France is"
+    - "In the year 2050,"
+    - "Once upon a time"
+    - "The quick brown fox"
+    - "def fibonacci(n):"
+    - "The theory of relativity states that"
+    - "To be or not to be"
+    - "Machine learning is"
+    - "The future of AI"
+  max_new_tokens: 30
+  do_sample: false
+  temperature: 1.0
+  top_p: 1.0
+  top_k: 50
+  seed: 42
+
+pipeline:
+  max_iterations: 20
+  target_match_rate: 0.95
+  early_stopping_patience: 5
+
+paths:
+  output_dir: "./lora_checkpoints"
+  results_dir: "./results"
+  cache_dir: "./cache"

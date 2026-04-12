@@ -1,0 +1,52 @@
+{
+  "layer_name": "model.layers.15.self_attn.q_proj.weight",
+  "layer_shape": [
+    576,
+    576
+  ],
+  "all_results": [
+    {
+      "loss": 0.03645515441894531,
+      "rel_error": 0.1704752941278009,
+      "compression_ratio": 72.0,
+      "original_params": 331776,
+      "compressed_params": 4608,
+      "rank": 4,
+      "time": 0.11344408988952637,
+      "score": 0.1704752941278009
+    },
+    {
+      "loss": 0.03521999344229698,
+      "rel_error": 0.16756241565335062,
+      "compression_ratio": 36.0,
+      "original_params": 331776,
+      "compressed_params": 9216,
+      "rank": 8,
+      "time": 0.04908013343811035,
+      "score": 0.1843186572186857
+    },
+    {
+      "loss": 0.03305645287036896,
+      "rel_error": 0.16233422880530152,
+      "compression_ratio": 18.0,
+      "original_params": 331776,
+      "compressed_params": 18432,
+      "rank": 16,
+      "time": 24.153605461120605,
+      "score": 0.1948010745663618
+    },
+    {
+      "loss": 0.029652200639247894,
+      "rel_error": 0.15374834244805008,
+      "compression_ratio": 9.0,
+      "original_params": 331776,
+      "compressed_params": 36864,
+      "rank": 32,
+      "time": 30.333348035812378,
+      "score": 0.19987284518246512
+    }
+  ],
+  "best_rank": 4,
+  "best_error": 0.1704752941278009,
+  "best_compression": 72.0
+}

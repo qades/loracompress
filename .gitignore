@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Model checkpoints and results
+lora_checkpoints/
+results/
+cache/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Hugging Face cache
+.cache/
+transformers_cache/
+hf_cache/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Allow Colab notebooks in repo
+!colab/*.ipynb
+
+# Autoresearch databases and results
+*.db
+autoresearch_*.json
+benchmark_*.json
+rank_dimension_analysis.json
+lr_optimization.json
+
+# Environment
+.env
+.env.local

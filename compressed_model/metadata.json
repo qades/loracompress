@@ -1,0 +1,117 @@
+{
+  "model_name": "HuggingFaceTB/SmolLM2-135M",
+  "layers_completed": 7,
+  "layers_skipped": 0,
+  "layers_recompressed": 7,
+  "total_original_params": 3538944,
+  "total_compressed_params": 116736,
+  "compression_ratio": 30.31578947368421,
+  "compression_time": 826.3704884052277,
+  "layer_metadata": {
+    "model.layers.0.self_attn.q_proj.weight": {
+      "type": "lora",
+      "name": "model.layers.0.self_attn.q_proj.weight",
+      "shape": [
+        576,
+        576
+      ],
+      "module_type": "q_proj",
+      "rank": 20,
+      "requested_rank": 16,
+      "error": 56.73271242289714,
+      "compression": 14.4,
+      "target_error": 5.0,
+      "file": "./compressed_model/layers/model_layers_0_self_attn_q_proj_weight.pt"
+    },
+    "model.layers.0.self_attn.k_proj.weight": {
+      "type": "lora",
+      "name": "model.layers.0.self_attn.k_proj.weight",
+      "shape": [
+        192,
+        576
+      ],
+      "module_type": "k_proj",
+      "rank": 13,
+      "requested_rank": 5,
+      "error": 56.10421545063782,
+      "compression": 11.076923076923077,
+      "target_error": 8.0,
+      "file": "./compressed_model/layers/model_layers_0_self_attn_k_proj_weight.pt"
+    },
+    "model.layers.0.self_attn.v_proj.weight": {
+      "type": "lora",
+      "name": "model.layers.0.self_attn.v_proj.weight",
+      "shape": [
+        192,
+        576
+      ],
+      "module_type": "v_proj",
+      "rank": 13,
+      "requested_rank": 5,
+      "error": 89.37984924379913,
+      "compression": 11.076923076923077,
+      "target_error": 8.0,
+      "file": "./compressed_model/layers/model_layers_0_self_attn_v_proj_weight.pt"
+    },
+    "model.layers.0.self_attn.o_proj.weight": {
+      "type": "lora",
+      "name": "model.layers.0.self_attn.o_proj.weight",
+      "shape": [
+        576,
+        576
+      ],
+      "module_type": "o_proj",
+      "rank": 20,
+      "requested_rank": 16,
+      "error": 79.51823802942545,
+      "compression": 14.4,
+      "target_error": 5.0,
+      "file": "./compressed_model/layers/model_layers_0_self_attn_o_proj_weight.pt"
+    },
+    "model.layers.0.mlp.gate_proj.weight": {
+      "type": "lora",
+      "name": "model.layers.0.mlp.gate_proj.weight",
+      "shape": [
+        1536,
+        576
+      ],
+      "module_type": "gate_proj",
+      "rank": 8,
+      "requested_rank": 4,
+      "error": 96.04112559294315,
+      "compression": 52.36363636363637,
+      "target_error": 3.0,
+      "file": "./compressed_model/layers/model_layers_0_mlp_gate_proj_weight.pt"
+    },
+    "model.layers.0.mlp.up_proj.weight": {
+      "type": "lora",
+      "name": "model.layers.0.mlp.up_proj.weight",
+      "shape": [
+        1536,
+        576
+      ],
+      "module_type": "up_proj",
+      "rank": 8,
+      "requested_rank": 4,
+      "error": 98.00530736103099,
+      "compression": 52.36363636363637,
+      "target_error": 3.0,
+      "file": "./compressed_model/layers/model_layers_0_mlp_up_proj_weight.pt"
+    },
+    "model.layers.0.mlp.down_proj.weight": {
+      "type": "lora",
+      "name": "model.layers.0.mlp.down_proj.weight",
+      "shape": [
+        576,
+        1536
+      ],
+      "module_type": "down_proj",
+      "rank": 8,
+      "requested_rank": 4,
+      "error": 97.47440726349191,
+      "compression": 52.36363636363637,
+      "target_error": 3.0,
+      "file": "./compressed_model/layers/model_layers_0_mlp_down_proj_weight.pt"
+    }
+  }
+}

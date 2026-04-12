@@ -1,0 +1,16 @@
+# Core ML libraries - ROCm compatible
+torch>=2.0.0
+transformers>=4.35.0
+peft>=0.7.0
+accelerate>=0.25.0
+safetensors>=0.4.0
+numpy>=1.24.0
+tqdm>=4.65.0
+huggingface_hub>=0.19.0
+scipy>=1.11.0
+
+# Hyperparameter tuning
+optuna>=3.4.0
+
+# Note: bitsandbytes is pre-installed in the ROCm distrobox
+# The amd-strix-halo-llm-finetuning image includes ROCm-compatible bitsandbytes
